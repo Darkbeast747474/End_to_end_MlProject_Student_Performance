@@ -112,7 +112,7 @@ class modelTrainer:
 
             # mlflow
 
-            with mlflow.start_run():
+            with mlflow.start_run() as run:
 
                 predicted_qualities = best_model.predict(X_test)
 
@@ -124,7 +124,7 @@ class modelTrainer:
                 mlflow.log_metric("r2", r2)
                 mlflow.log_metric("mae", mae)
 
-
+                print(mlflow.get_run(run_id=run.info.run_id))
                 # Model registry does not work with file store
                 if tracking_url_type_store != "file":
 
@@ -132,7 +132,17 @@ class modelTrainer:
                     # There are other ways to use the Model Registry, which depends on the use case,
                     # please refer to the doc for more information:
                     # https://mlflow.org/docs/latest/model-registry.html#api-workflow
-                    mlflow.sklearn.log_model(best_model, "model", registered_model_name=actual_model)
+                    
+                    mlflow.set_tag("Training Info", "Best Model For Marks Predictions")
+
+                    # Infer the model signature
+                    # Log the model
+                    model_info = mlflow.sklearn.log_model(
+                        sk_model=best_model,
+                        artifact_path="Marks_preds",
+                        input_example=X_train,
+                        registered_model_name=actual_model,
+                    )
                 else:
                     mlflow.sklearn.log_model(best_model, "model")
 

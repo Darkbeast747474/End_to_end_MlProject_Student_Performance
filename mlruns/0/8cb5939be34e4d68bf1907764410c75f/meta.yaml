@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/HP/Documents/Clg/MLProject/mlruns/0/8cb5939be34e4d68bf1907764410c75f/artifacts
+end_time: 1719573039234
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 8cb5939be34e4d68bf1907764410c75f
+run_name: capable-dove-113
+run_uuid: 8cb5939be34e4d68bf1907764410c75f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1719573038267
+status: 4
+tags: []
+user_id: root

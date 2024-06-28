@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/HP/Documents/Clg/MLProject/mlruns/0/06490bb2d7204265b44c3fce8987c3b0/artifacts
+end_time: 1719574009260
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 06490bb2d7204265b44c3fce8987c3b0
+run_name: able-cod-450
+run_uuid: 06490bb2d7204265b44c3fce8987c3b0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1719574001965
+status: 3
+tags: []
+user_id: root

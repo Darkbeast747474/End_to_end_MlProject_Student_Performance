@@ -18,7 +18,6 @@ if __name__ == "__main__":
         ModelTrainer = modelTrainer()
         print('r2_score',ModelTrainer.initiate_training(train_arr,test_arr))
         
-        
     except Exception as e:
         logging.info("Custom Exception")
         raise CustomException(e, sys)
