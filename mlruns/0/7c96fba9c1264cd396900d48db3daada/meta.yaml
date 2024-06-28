@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/HP/Documents/Clg/MLProject/mlruns/0/7c96fba9c1264cd396900d48db3daada/artifacts
+end_time: 1719571787380
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 7c96fba9c1264cd396900d48db3daada
+run_name: resilient-fly-494
+run_uuid: 7c96fba9c1264cd396900d48db3daada
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1719571786534
+status: 4
+tags: []
+user_id: root

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/HP/Documents/Clg/MLProject/mlruns/0/75294671a17a49b1ab001c57e67aa1fa/artifacts
+end_time: 1719572098736
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 75294671a17a49b1ab001c57e67aa1fa
+run_name: shivering-roo-33
+run_uuid: 75294671a17a49b1ab001c57e67aa1fa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1719572087076
+status: 3
+tags: []
+user_id: root
