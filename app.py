@@ -4,6 +4,9 @@ from src.MLProject.logger import logging
 from src.MLProject.components.data_transformation import *
 from src.MLProject.components.model_tranier import *
 import sys
+import mlflow
+import dagshub
+dagshub.init(repo_owner='Darkbeast747474', repo_name='MLProject', mlflow=True)
 
 if __name__ == "__main__":
     logging.info("Executing App.py......")
