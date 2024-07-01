@@ -29,7 +29,7 @@ def predict_datapoint():
 
         predict_pipeline=PredictPipeline()
         print("Mid Prediction")
-        results=predict_pipeline.predict(pred_df)
+        results=np.rint(predict_pipeline.predict(pred_df))
         print("after Prediction")
         return render_template('home.html',results=results[0])
     
