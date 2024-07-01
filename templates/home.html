@@ -1,12 +1,19 @@
 <html>
+<head>
+    <link rel="stylesheet" type="text/css" href="static\style.css">
+</head>
 <body>
+    <div class="video-bg">
+		<video autoplay muted loop id="bg-video">
+			<source src="{{ url_for('static', filename='Bg_s.mp4') }}" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+	</div>
     <div class="login">
-       <h1>Student Exam Performance Indicator</h1>
-   
-       <form action="{{ url_for('predict_datapoint')}}" method="post">
         <h1>
-            <legend>Student Exam Performance Prediction</legend>
+            Student Exam Performance Prediction
         </h1>
+       <form action="{{ url_for('predict_datapoint')}}" method="post">
         <div class="mb-3">
             <label class="form-label">Gender</label>
             <select class="form-control" name="gender" placeholder="Enter you Gender" required>
