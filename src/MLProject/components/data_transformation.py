@@ -15,17 +15,6 @@ from src.MLProject.exception import CustomException
 from src.MLProject.logger import logging
 import os
 
-def cat_to_num(df: pd.DataFrame) -> pd.DataFrame:
-    categorical_cols = df.select_dtypes(include=['object', 'category']).columns
-    mappings = {}
-    
-    for col in categorical_cols:
-        unique_values = df[col].unique().tolist()
-        value_to_int = {value: i for i, value in enumerate(unique_values)}
-        mappings[col] = value_to_int
-        df[col] = df[col].map(value_to_int)
-    return df, mappings
-
 @dataclass
 class DataTransformationConfig:
     preprocessor_obj_file_path=os.path.join('artifacts','preprocessor.pkl')
